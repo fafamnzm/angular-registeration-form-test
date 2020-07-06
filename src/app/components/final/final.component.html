@@ -1,0 +1,140 @@
+<div>
+  <br />
+  <br />
+  <h3>let's check stuff</h3>
+  <label>
+    First Name:
+    <input type="text" disabled [ngModel]="register.firstName" />
+  </label>
+  <label>
+    Last Name:
+    <input type="text" disabled [ngModel]="register.lastName" />
+  </label>
+  <label>
+    Email:
+    <input type="text" disabled [ngModel]="register.email" />
+  </label>
+  <label>
+    Phone Number:
+    <input type="text" disabled [ngModel]="register.phoneNumber" />
+  </label>
+  <label>
+    Address:
+    <input type="text" disabled [ngModel]="address" />
+  </label>
+  <label>
+    Postal Code:
+    <input type="text" disabled [ngModel]="register.postalCode" />
+  </label>
+  <label>
+    City:
+    <input type="text" disabled [ngModel]="register.city" />
+  </label>
+  <label>
+    State:
+    <input type="text" disabled [ngModel]="register.countryState" />
+  </label>
+  <label>
+    Country:
+    <input type="text" disabled [ngModel]="register.country" />
+  </label>
+  <!-- <p>First Name: {{ register.firstName }}</p>
+  <p>Last Name: {{ register.lastName }}</p>
+  <p>Phone Number: {{ register.phoneNumber }}</p>
+  <p>Email: {{ register.email }}</p>
+  <p>Address: {{ register.addressLine1 }} - {{ register.addressLine2 }}</p>
+  <p>Postal Code: {{ register.postalCode }}</p>
+  <p>City: {{ register.city }}</p>
+  <p>State: {{ register.countryState }}</p>
+  <p>Country: {{ register.country }}</p>-->
+  <div>
+    <button (click)="Submit()" mat-button color="primary">
+      Submit
+    </button>
+  </div>
+  <table class="example-full-width" cellspacing="0">
+    <tr>
+      <td>
+        <mat-form-field class="example-full-width">
+          <mat-label>First name</mat-label>
+          <input matInput disabled [ngModel]="register.firstName" />
+        </mat-form-field>
+      </td>
+      <td>
+        <mat-form-field class="example-full-width">
+          <mat-label>Last Name</mat-label>
+          <input matInput disabled [ngModel]="register.lastName" />
+        </mat-form-field>
+      </td>
+    </tr>
+  </table>
+  <table class="example-full-width" cellspacing="0">
+    <tr>
+      <td>
+        <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input matInput disabled [ngModel]="register.email" />
+        </mat-form-field>
+      </td>
+      <td>
+        <mat-form-field class="example-full-width">
+          <mat-label>Phone Number</mat-label>
+          <input matInput disabled [ngModel]="register.phoneNumber" />
+        </mat-form-field>
+      </td>
+    </tr>
+  </table>
+  <mat-form-field class="example-full-width">
+    <mat-label>Address</mat-label>
+    <textarea
+      matInput
+      placeholder="Ex. Noboniad 1"
+      [ngModel]="register.addressLine1"
+      disabled
+    ></textarea>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Address 2</mat-label>
+    <textarea disabled matInput [ngModel]="register.addressLine2"></textarea>
+  </mat-form-field>
+
+  <table class="example-full-width" cellspacing="0">
+    <tr>
+      <td>
+        <mat-form-field class="example-full-width">
+          <mat-label>City</mat-label>
+          <input
+            disabled
+            matInput
+            placeholder="Ex. Kish Island"
+            [ngModel]="register.city"
+          />
+        </mat-form-field>
+      </td>
+      <td>
+        <mat-form-field class="example-full-width">
+          <mat-label>State</mat-label>
+          <input
+            disabled
+            matInput
+            placeholder="Ex. Hormozgan"
+            [ngModel]="register.countryState"
+          />
+        </mat-form-field>
+      </td>
+      <td>
+        <mat-form-field class="example-full-width">
+          <mat-label>Postal Code</mat-label>
+          <input
+            [ngModel]="register.postalCode"
+            matInput
+            #postalCode
+            maxlength="15"
+            disabled
+            placeholder="Ex. 94105"
+          />
+        </mat-form-field>
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,30 @@
+<p>address works!</p>
+<div>
+  <label>Address 1:</label>
+  <input type="text" name="addressLine1" [(ngModel)]="register.addressLine1" />
+</div>
+<div>
+  <label>Address 2: </label>
+  <input type="text" name="addressLine2" [(ngModel)]="register.addressLine2" />
+</div>
+<div>
+  <label>Postal Code: </label>
+  <input type="text" name="postalCode" [(ngModel)]="register.postalCode" />
+</div>
+<div>
+  <label>City</label>
+  <input type="text" name="city" [(ngModel)]="register.city" />
+</div>
+<div>
+  <label>State: </label>
+  <input type="text" name="countryState" [(ngModel)]="register.countryState" />
+</div>
+<div>
+  <label>Country:</label>
+  <input type="text" name="country" [(ngModel)]="register.country" />
+</div>
+<div>
+  <button mat-button routerLink="/final" color="primary">
+    Confirm Registeration
+  </button>
+</div>
