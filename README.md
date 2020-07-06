@@ -1,5 +1,9 @@
 # Test
 
+This is a very simple test for a registeration form for a company
+
+UI needs work. Angular material does not work for some reason!! :w
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
 
 ## Development server
