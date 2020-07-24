@@ -2,6 +2,52 @@
   <h1>Name Compenent</h1>
   <form>
     <div>
+      <mat-form-field class="example-form-field">
+        <mat-label>First Name</mat-label>
+        <input
+          matInput
+          name="firstName"
+          [(ngModel)]="register.firstName"
+          placeholder="example: Faramarz"
+        />
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="example-form-field">
+        <mat-label>Last Name</mat-label>
+        <input
+          matInput
+          name="lastName"
+          [(ngModel)]="register.lastName"
+          placeholder="example: Monazami"
+        />
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="example-form-field">
+        <mat-label>Email </mat-label>
+        <input
+          matInput
+          name="email"
+          [(ngModel)]="register.email"
+          placeholder="example: example@example.com"
+        />
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="example-form-field">
+        <mat-label>Phone Number</mat-label>
+        <input
+          matInput
+          name="phoneNumber"
+          [(ngModel)]="register.phoneNumber"
+          placeholder="example: +989365897886"
+        />
+      </mat-form-field>
+    </div>
+    <button mat-button routerLink="/address" color="primary">Next</button>
+    <!--
+          <div>
       <label>First Name: </label>
       <input
         type="text"
@@ -37,54 +83,6 @@
         placeholder="eg. +989365897886"
       />
     </div>
-
-    <button mat-button routerLink="/address" color="primary">Next</button>
-    <div>
-      <mat-form-field class="example-form-field">
-        <mat-label>First Name</mat-label>
-        <input
-          matInput
-          name="firstName"
-          [(ngModel)]="register.firstName"
-          placeholder="example: Faramarz"
-        />
-      </mat-form-field>
-    </div>
-    <div>
-      <mat-form-field class="example-form-field">
-        <mat-label>Last Name</mat-label>
-        <input
-          matInput
-          name="lastName"
-          [(ngModel)]="register.lastName"
-          placeholder="example: Monazami"
-        />
-      </mat-form-field>
-    </div>
-    <div>
-      <mat-form-field class="example-form-field">
-        <mat-label
-          >Email
-
-          <input
-            matInput
-            name="email"
-            [(ngModel)]="register.email"
-            placeholder="example: example@example.com"
-          />
-        </mat-label>
-      </mat-form-field>
-    </div>
-    <div>
-      <mat-form-field class="example-form-field">
-        <mat-label>Phone Number</mat-label>
-        <input
-          matInput
-          name="phoneNumber"
-          [(ngModel)]="register.phoneNumber"
-          placeholder="example: +989365897886"
-        />
-      </mat-form-field>
-    </div>
+    -->
   </form>
 </div>

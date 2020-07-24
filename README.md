@@ -1,8 +1,8 @@
 # Test
 
-This is a very simple test for a registeration form for a company
+This is a sample for a registeration form using Angular 9 and Angular Material
 
-UI needs work. Angular material does not work for some reason!! :w
+State managemnet is handled by Services
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
 

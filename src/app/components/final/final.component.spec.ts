@@ -8,9 +8,8 @@ describe('FinalComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FinalComponent ]
-    })
-    .compileComponents();
+      declarations: [FinalComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -21,5 +20,9 @@ describe('FinalComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('every field should be filled', () => {
+    // expect(component.address).toBeTruthy();
   });
 });

@@ -13,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatSliderModule,
     MatInputModule,
     MatButtonModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

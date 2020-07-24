@@ -1,11 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 * {
   text-justify: center;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
 }
+/*
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -24,4 +27,4 @@ input {
   height: 20px;
   flex: 0 0 200px;
   margin-left: 10px;
-}
+} */
